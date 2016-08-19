@@ -8,92 +8,114 @@
     <title>军信</title>
     <link rel="stylesheet" href="../source/mui/css/mui.css">
     <link rel="stylesheet" href="../source/css/public.css">
+    <script src="../source/js/jquery-1.11.1.min.js"></script>
+    <script src="../source/js/server.js"></script>
     <script src="../source/mui/js/mui.js"></script>
+    <script src="../source/js/public.js"></script>
 </head>
 <body>
 	<div class="mui-content">
-		<div class="slideImageBox">
-			<img src="../source/images/pic.jpg" alt="">
-		</div>
+        <div id="slider" class="mui-slider">
+            <div class="mui-slider-group mui-slider-loop">
+                <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+                <div class="mui-slider-item">
+                    <a>
+                        <img src="../source/images/banner.png">
+                    </a>
+                </div>
+                <div class="mui-slider-item">
+                    <a>
+                        <img src="../source/images/banner.png">
+                    </a>
+                </div>
+                <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+                <div class="mui-slider-item">
+                    <a>
+                        <img src="../source/images/banner.png">
+                    </a>
+                </div>
+            </div>
+        </div>
 		<ul class="mui-table-view mui-grid-view mui-grid-9 controlBar">
             <li class="mui-table-view-cell mui-media mui-col-xs-4">
-            	<a href="#">
-                    <span class="mui-icon mui-icon-home"></span>
-                    <div class="mui-media-body">待我</div>
+            	<a>
+                    <img class="imageIcon imageIcon-2x" src="../source/icon/shenpi.png" />
+                    <div style="margin-top: 2px;font-size: 12px;" class="mui-media-body">待我审批</div>
                 </a>
             </li>
             <li class="mui-table-view-cell mui-media mui-col-xs-4">
-            	<a href="#">
-                    <span class="mui-icon mui-icon-email">
-                    	<span class="mui-badge">5</span>
-                    </span>
-                    <div class="mui-media-body">Email</div></a></li>
+            	<a>
+                    <img class="imageIcon imageIcon-2x" src="../source/icon/gongzuo.png" />
+                    <div style="margin-top: 2px;font-size: 12px;" class="mui-media-body">我发起的</div>
+                </a>
+            </li>
             <li class="mui-table-view-cell mui-media mui-col-xs-4">
-            	<a href="#">
-                    <span class="mui-icon mui-icon-chatbubble"></span>
-                    <div class="mui-media-body">Chat</div>
+            	<a>
+                    <img class="imageIcon imageIcon-2x" src="../source/icon/chaosong.png" />
+                    <div style="margin-top: 2px;font-size: 12px;" class="mui-media-body">抄送我的</div>
                 </a>
             </li>
         </ul>
 		<ul class="mui-table-view mui-grid-view mui-grid-9 functionBar">
             <li class="mui-table-view-cell mui-media mui-col-xs-3">
-            	<a href="#">
-                    <span class="mui-icon mui-icon-home"></span>
+            	<a>
+                    <img class="imageIcon imageIcon-2x" src="../source/icon/phone.png" />
                     <div class="mui-media-body">法律咨询</div>
                 </a>
             </li>
             <li class="mui-table-view-cell mui-media mui-col-xs-3">
-            	<a href="#">
-                    <span class="mui-icon mui-icon-email">
-                    	<span class="mui-badge">5</span>
-                    </span>
+            	<a>
+                    <img class="imageIcon imageIcon-2x" src="../source/icon/talk.png" />
                     <div class="mui-media-body">知心话</div>
                 </a>
             </li>
             <li class="mui-table-view-cell mui-media mui-col-xs-3">
-            	<a href="#">
-                    <span class="mui-icon mui-icon-chatbubble"></span>
+            	<a>
+                    <img class="imageIcon imageIcon-2x" src="../source/icon/Sign.png" />
                     <div class="mui-media-body">签到</div>
                 </a>
             </li>
             <li class="mui-table-view-cell mui-media mui-col-xs-3">
-            	<a href="#">
-                    <span class="mui-icon mui-icon-location"></span>
+            	<a href="barracksReparation_start.html" title="营房报修">
+                    <img class="imageIcon imageIcon-2x" src="../source/icon/house.png" />
                     <div class="mui-media-body">营房报修</div>
                 </a>
             </li>
             <li class="mui-table-view-cell mui-media mui-col-xs-3">
-            	<a href="#">
-                    <span class="mui-icon mui-icon-search"></span>
+            	<a>
+                    <img class="imageIcon imageIcon-2x" src="../source/icon/Notice.png" />
                     <div class="mui-media-body">通知公告</div>
                 </a>
             </li>
             <li class="mui-table-view-cell mui-media mui-col-xs-3">
-            	<a href="#">
-                    <span class="mui-icon mui-icon-phone"></span>
+            	<a>
+                    <img class="imageIcon imageIcon-2x" src="../source/icon/clothes.png" />
                     <div class="mui-media-body">服装调换</div>
                 </a>
             </li>
             <li class="mui-table-view-cell mui-media mui-col-xs-3">
-            	<a href="#">
-                    <span class="mui-icon mui-icon-gear"></span>
+            	<a href="mealsPublic.html" title="伙食公开">
+                    <img class="imageIcon imageIcon-2x" src="../source/icon/food.png" />
                     <div class="mui-media-body">伙食公开</div>
                 </a>
             </li>
             <li class="mui-table-view-cell mui-media mui-col-xs-3">
-            	<a href="#">
-                    <span class="mui-icon mui-icon-info"></span>
+            	<a>
+                    <img class="imageIcon imageIcon-2x" src="../source/icon/shopping.png" />
                     <div class="mui-media-body">零星采购</div>
                 </a>
             </li>
            <li class="mui-table-view-cell mui-media mui-col-xs-3">
-           	<a href="#">
-                    <span class="mui-icon mui-icon-more"></span>
+           	    <a>
+                    <img class="imageIcon imageIcon-2x" src="../source/icon/More.png" />
                     <div class="mui-media-body">添加更多</div>
                 </a>
             </li>
         </ul> 
 	</div>
+<script>
+    mui.init();
+</script>
 </body>
 </html>
 

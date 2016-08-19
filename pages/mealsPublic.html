@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,48 +7,59 @@
     <title>军信</title>
     <link rel="stylesheet" href="../source/mui/css/mui.css">
     <link rel="stylesheet" href="../source/css/public.css">
+    <link rel="stylesheet" href="../source/css/mealsPublic.css">
     <script src="../source/mui/js/mui.js"></script>
 </head>
 <body>
+    <nav class="mui-bar mui-bar-tab">
+        <div class="mui-tab-item" style="border-right: 1px solid #eee;">
+            <img class="imageIcon" src="../source/icon/opinion.png" />
+            意见
+        </div>
+        <div class="mui-tab-item">
+            <img class="imageIcon" src="../source/icon/Clickalike.png" />
+            点赞
+        </div>
+    </nav>
 	<div class="mui-content">
 		<div id="slider" class="mui-slider">
             <div class="mui-slider-group mui-slider-loop">
                 <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
                 <div class="mui-slider-item mui-slider-item-duplicate">
-                    <a href="#">
-                        <img src="../source/images/yuantiao.jpg">
-                        <p class="mui-slider-title">静静看这世界</p>
+                    <a>
+                        <img src="../source/images/mealsPublic.png">
+                        <p class="mui-slider-title">糖醋排骨</p>
                     </a>
                 </div>
                 <div class="mui-slider-item">
-                    <a href="#">
-                        <img src="../source/images/shuijiao.jpg">
-                        <p class="mui-slider-title">幸福就是可以一起睡觉</p>
+                    <a>
+                        <img src="../source/images/mealsPublic.png">
+                        <p class="mui-slider-title">糖醋排骨</p>
                     </a>
                 </div>
                 <div class="mui-slider-item">
-                    <a href="#">
+                    <a>
                         <img src="../source/images/muwu.jpg">
                         <p class="mui-slider-title">想要一间这样的木屋，静静的喝咖啡</p>
                     </a>
                 </div>
                 <div class="mui-slider-item">
-                    <a href="#">
+                    <a>
                         <img src="../source/images/cbd.jpg">
                         <p class="mui-slider-title">Color of SIP CBD</p>
                     </a>
                 </div>
                 <div class="mui-slider-item">
-                    <a href="#">
+                    <a>
                         <img src="../source/images/yuantiao.jpg">
                         <p class="mui-slider-title">静静看这世界</p>
                     </a>
                 </div>
                 <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
                 <div class="mui-slider-item mui-slider-item-duplicate">
-                    <a href="#">
-                        <img src="../source/images/shuijiao.jpg">
-                        <p class="mui-slider-title">幸福就是可以一起睡觉</p>
+                    <a>
+                        <img src="../source/images/mealsPublic.png">
+                        <p class="mui-slider-title">糖醋排骨</p>
                     </a>
                 </div>
             </div>
@@ -62,14 +72,14 @@
         </div>
         <div class="dateSelectBox">
             <a class="ctrlButton left">
-                <span class="mui-icon mui-icon-back"></span>
+                <img style="width: 20px;height: 20px;" class="imageIcon" src="../source/icon/left.png" />
             </a>
             <div class="dateValue">
                 <span style="margin-right: 20px;">2016-08-17</span>
                 <span>星期三</span>
             </div>
             <a class="ctrlButton right">
-                <span class="mui-icon mui-icon-forward"></span>
+                <img style="width: 20px;height: 20px;" class="imageIcon" src="../source/icon/right.png" />
             </a>
         </div>
         <div class="title">菜单介绍</div>
@@ -152,95 +162,26 @@
         <ul class="mui-table-view jx-table-view">
             <li class="mui-table-view-cell mui-media">
                 <a href="javascript:;">
-                    <div class="mui-media-object mui-pull-left" style="background-color: #1bc598;">
-                        早
-                    </div>
+                    <img class="mui-media-object mui-pull-left" src="../source/images/chushi.png">
                     <div class="mui-media-body">
                         <table class="leftRightTable">
                             <tbody>
                                 <tr>
-                                    <td>馒头</td>
-                                    <td>0.5元</td>
+                                    <td rowspan="2">屈浩</td>
+                                    <td>&nbsp;</td>
                                 </tr>
                                 <tr>
-                                    <td>包子</td>
-                                    <td>1元</td>
+                                    <td>&nbsp;</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                 </a>
-            </li>
-            <li class="mui-table-view-cell mui-media">
-                <a href="javascript:;">
-                    <div class="mui-media-object mui-pull-left" style="background-color: #f5b55d;">
-                        中
-                    </div>
-                    <div class="mui-media-body">
-                        <table class="leftRightTable">
-                            <tbody>
-                                <tr>
-                                    <td>酸菜鱼</td>
-                                    <td>20元</td>
-                                </tr>
-                                <tr>
-                                    <td>番茄鸡蛋汤</td>
-                                    <td>12元</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </a>
-            </li>
-            <li class="mui-table-view-cell mui-media fullAfterSplitLine">
-                <a href="javascript:;">
-                    <div class="mui-media-object mui-pull-left" style="background-color: #9a8abb;">
-                        晚
-                    </div>
-                    <div class="mui-media-body">
-                        <table class="leftRightTable">
-                            <tbody>
-                                <tr>
-                                    <td>糖醋排骨</td>
-                                    <td>20元</td>
-                                </tr>
-                                <tr>
-                                    <td>地三鲜</td>
-                                    <td>10元</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </a>
-            </li>
-            <li class="mui-table-view-cell mui-media">
-                <table class="leftRightTable">
-                    <tbody>
-                        <tr>
-                            <td>合计</td>
-                            <td>63.5元</td>
-                        </tr>
-                    </tbody>
-                </table>
             </li>
         </ul>
 	</div>
 <script>
-    mui.init({
-        swipeBack:true //启用右滑关闭功能
-    });
-    var slider = mui("#slider");
-    document.getElementById("switch").addEventListener('toggle', function(e) {
-        if (e.detail.isActive) {
-            slider.slider({
-                interval: 5000
-            });
-        } else {
-            slider.slider({
-                interval: 0
-            });
-        }
-    });
+    mui.init();
 </script>
 </body>
 </html>

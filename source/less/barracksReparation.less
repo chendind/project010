@@ -1,0 +1,91 @@
+@import url('init.less');
+.mui-content > .mui-card{
+	margin-top: 10px;
+	margin: 10px -1px;
+	box-shadow: none;
+	&:first-child{
+		margin-top: 10px;
+	}
+}
+.mui-input-group .mui-input-row:after{
+	left: 30%;
+}
+.mui-input-row label{
+	width: 30%;
+	padding: 10px 15px;
+	line-height: inherit;
+}
+.mui-input-row label ~ input{
+	width: 70%;
+	font-size: 14px;
+	color: #666;
+}
+.timelineBox{
+	padding: 10px 5px;
+	.innerBox{
+		margin-left: 10px;
+		border-left: 1px solid #c8c7cc;
+		.line{
+			position: relative;
+			padding: 2px 10px 5px 17px;
+			margin-bottom: 8px;
+			color: #999;
+			&.been{
+				&:after{
+					background-color: @green;
+					border-color: @green;
+				}
+			}
+			&:before{
+				position: absolute;
+				left: -6px;
+				top: 5px;
+				content: '';
+				display: block;
+				width: 13px;
+				height: 13px;
+				background-color: #fff;
+				border-radius: 50%;
+			}
+			&:after{
+				position: absolute;
+				left: -6px;
+				top: 6px;
+				content: '';
+				display: block;
+				width: 9px;
+				height: 9px;
+				border: 1px solid #c8c7cc;
+				border-radius: 50%;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
