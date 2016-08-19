@@ -1,0 +1,117 @@
+@import url('init.less');
+body{
+	color: #555;
+}
+.slideImageBox{
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-bottom: 56%;
+	&>img{
+		position: absolute;
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+}
+.controlBar{
+	border: none !important;
+	background-color: @green !important;
+	.mui-table-view-cell{
+		border: none !important;
+		color: #fff !important;
+		padding: 0 15px !important;
+		&>a{
+			padding: 5px 0 !important;
+		}
+		.mui-media-body{
+			color: #fff !important;
+		}
+	}
+}
+.functionBar{
+	background-color: #fff !important;
+}
+.mui-slider-title{
+	color: #fff;
+	font-size: 16px;
+}
+.dateSelectBox{
+	position: relative;
+	padding: 0 36px;
+	height: 50px;
+	background-color: #fff;
+	margin-top: 10px;
+	.dateValue{
+		text-align: center;
+		line-height: 50px;
+	}
+	.ctrlButton{
+		display: block;
+		position: absolute;
+		top: 0;
+		height: 50px;
+		width: 36px;
+		line-height: 50px;
+		text-align: center;
+		color: @green;
+		&.left{
+			left: 0;
+		}
+		&.right{
+			right: 0;
+		}
+	}
+}
+.title{
+	font-size: 14px;
+	padding: 15px 10px 5px;
+	color: #999;
+}
+.jx-table-view{
+	.mui-media-object{
+		width: 40px;
+		height: 40px;
+		border-radius: 40px;
+		color: #fff;
+		line-height: 40px;
+		text-align: center;
+	}
+	.mui-table-view-cell:after{
+		left: 65px;
+	}	
+}
+.mui-table-view-cell{
+	&.fullAfterSplitLine{
+		&:after{
+			left: 0;
+		}
+	}
+}
+.leftRightTable{
+	width: 100%;
+	border-collapse: collapse;
+	table-layout: fixed;
+	&>tbody{
+		&>tr{
+			&>td{
+				&:nth-child(1){
+					text-align: left;
+				}
+				&:nth-child(2){
+					text-align: right;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
