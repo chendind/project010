@@ -1,0 +1,74 @@
+@import url('init.less');
+.mui-content{
+	position: relative;
+	.selectBox{
+		height: 30px;
+		width: 100%;
+		background-color: #fff;
+		.selectList{
+			height: 30px;
+			width: 100%;
+			li{
+				list-style-type: none;
+				width: 25%;
+				float: left;
+				height: 30px;
+				line-height: 30px;
+				text-align: center;
+				font-size: 14px;
+				color: #666;
+			}
+			.addGreen{
+				color: #136f2e;
+				border-bottom:2px solid #136f2e;
+			}
+			.after;
+		}
+	}
+	.changeBox{
+		display: none;
+		.mui-ul{
+			li{
+				position: relative;
+				padding: 10px;
+				p{
+					min-height: 50px;
+					color: #232323;
+					font-size: 14px;
+				}
+				.date{
+					position: absolute;
+					right: 20px;
+					bottom: 11px;
+					color: #ddd;
+					font-size: 10px;
+				}
+			}
+		}
+		.addChangeInfo{
+			display: block;
+			width: 45px;
+			height: 45px;
+			border-radius:50%;
+			position: fixed;
+			right: 10px;
+			bottom: 40px;
+			background-color: #5e9d72;
+			text-align: center;
+			.editIcon{
+				color: #fff;
+				font-size: 23px;
+				height: 45px;
+				line-height: 45px;
+			}
+		}
+	}
+	.changeBox4{
+		.mui-table-view-cell:after{
+			height: 1px!important;
+		}
+	}
+	.showBox{
+		display: block;
+	}
+}

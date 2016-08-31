@@ -1,0 +1,107 @@
+.after:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+.before:before {
+  display: block;
+  content: '';
+  clear: both;
+}
+.veryCenter {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+.verticalCenter {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+}
+.horizontalCenter {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+}
+.ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.mui-content {
+  position: relative;
+}
+.mui-content .selectBox {
+  height: 30px;
+  width: 100%;
+  background-color: #fff;
+}
+.mui-content .selectBox .selectList {
+  height: 30px;
+  width: 100%;
+}
+.mui-content .selectBox .selectList li {
+  list-style-type: none;
+  width: 25%;
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+.mui-content .selectBox .selectList .addGreen {
+  color: #136f2e;
+  border-bottom: 2px solid #136f2e;
+}
+.mui-content .selectBox .selectList:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+.mui-content .changeBox {
+  display: none;
+}
+.mui-content .changeBox .mui-ul li {
+  position: relative;
+  padding: 10px;
+}
+.mui-content .changeBox .mui-ul li p {
+  min-height: 50px;
+  color: #232323;
+  font-size: 14px;
+}
+.mui-content .changeBox .mui-ul li .date {
+  position: absolute;
+  right: 20px;
+  bottom: 11px;
+  color: #ddd;
+  font-size: 10px;
+}
+.mui-content .changeBox .addChangeInfo {
+  display: block;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  position: fixed;
+  right: 10px;
+  bottom: 40px;
+  background-color: #5e9d72;
+  text-align: center;
+}
+.mui-content .changeBox .addChangeInfo .editIcon {
+  color: #fff;
+  font-size: 23px;
+  height: 45px;
+  line-height: 45px;
+}
+.mui-content .changeBox4 .mui-table-view-cell:after {
+  height: 1px!important;
+}
+.mui-content .showBox {
+  display: block;
+}

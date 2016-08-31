@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>身高</title>
+    <link rel="stylesheet" href="../source/mui/css/mui.css">
+    <link rel="stylesheet" href="../source/css/public.css">
+    <link rel="stylesheet" href="../source/css/commonchangeInfo.css">
+    <link rel="stylesheet" href="../source/css/reset.css">
+    <script src="../source/js/jquery-1.11.1.min.js"></script>
+    <script src="../source/js/server.js"></script>
+    <script src="../source/mui/js/mui.js"></script>
+    <script src="../source/js/public.js?201608191610"></script>
+</head>
+<body>
+    <div class="mui-content">
+        <div class="addInfo">
+            <div class="addInfoContent">
+                <p class="enterTitle">采购信息</p>
+            </div>
+            <div class="textBox">
+                <p class="infoLine">
+                    <span class="leftItem">姓名</span>
+                    <span class="rightItem">张士夫</span>
+                </p>
+                <p class="infoLine">
+                    <span class="leftItem">时间</span>
+                    <span class="rightItem">2016.08.20 10:21</span>
+                </p>
+                <p class="infoLine">
+                    <span class="leftItem">单位</span>
+                    <span class="rightItem">378营175连</span>
+                </p>
+                <p class="infoLine">
+                    <span class="leftItem">采购信息</span>
+                    <span class="rightItem">采购一批办公文具，100个笔记本，100支钢笔</span>
+                </p>
+            </div>
+        </div>
+        <div class="checkBox addInfo">
+            <div class="addInfoContent">
+                <p class="enterTitle">采购站长审批<span class="paraInside">通过</span></p>
+            </div>
+            <div class="addInfoContent">
+                <p class="enterTitle">意见反馈<span class="paraInside">审批通过可采购相应文具</span></p>               
+            </div>
+        </div>
+        <div class="addInfo">
+            <div class="addInfoContent">
+                <p class="enterTitle">取货信息</p>
+            </div>
+            <div class="textBox">
+                <textarea placeholder="请输入文字..." class="enterText"></textarea>
+                <!-- <span class="mui-icon mui-icon-camera camera"></span> -->
+            </div>
+        </div>
+        <div class="bottomBtn bottomBtn1">
+            <a href="" class="submitBtn submitBtn1">完成</a>
+        </div>
+    </div> 
+</body>
+<script type="text/javascript">
+  var height=$(window).height();
+  $(".mui-content").css("min-height",height);
+</script>

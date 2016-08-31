@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>服装调换</title>
+    <link rel="stylesheet" href="../source/mui/css/mui.css">
+    <link rel="stylesheet" href="../source/css/public.css">
+    <link rel="stylesheet" href="../source/css/clothesInfo.css">
+    <link rel="stylesheet" href="../source/css/reset.css">
+    <script src="../source/js/jquery-1.11.1.min.js"></script>
+    <script src="../source/js/server.js"></script>
+    <script src="../source/mui/js/mui.js"></script>
+    <script src="../source/js/public.js?201608191610"></script>
+</head>
+<body>
+   <div class="mui-content">
+       <div class="selectBox">
+           <ul class="selectList">
+               <li class="addGreen">被装信息</li>
+               <li>号型调换</li>
+               <li>价拨购买</li>
+               <li>号型更改</li>
+           </ul>
+       </div>
+       <div class="changeBox changeBox1 showBox">
+            <ul class="mui-table-view mui-ul">
+               <li class="mui-table-view-cell">
+                    <p>2016年被装信息统计</p>
+                    <span class="date">2016.08.25</span>
+               </li>
+               <li class="mui-table-view-cell">
+                    <p>被装信息采购</p>
+                    <span class="date">2016.08.10</span>
+               </li>
+           </ul> 
+       </div>
+       <div class="changeBox changeBox2">
+            <ul class="mui-table-view mui-ul">
+               <li class="mui-table-view-cell">
+                    <p>申请号型调换</p>
+                    <span class="date">2016.08.25</span>
+               </li>
+               <li class="mui-table-view-cell">
+                    <p>申请号型调换</p>
+                    <span class="date">2016.08.25</span>
+               </li>
+           </ul>
+           <a href="changeInfo.html" title="号型调换" class="addChangeInfo">
+              <span class="mui-icon mui-icon-compose editIcon"></span>
+           </a> 
+       </div>
+       <div class="changeBox changeBox3">
+            <ul class="mui-table-view mui-ul">
+           </ul> 
+       </div>
+       <div class="changeBox changeBox4">
+            <ul class="mui-table-view">
+                <a href="height.html" title="身高">
+                   <li class="mui-table-view-cell">
+                        <p>身高</p>
+                   </li>
+                </a>
+                <a href="weight.html" title="体重">
+                   <li class="mui-table-view-cell">
+                        <p>体重</p>
+                   </li>
+               </a>
+               <a href="headGirth.html" title="头围">
+                   <li class="mui-table-view-cell">
+                        <p>头围</p>
+                   </li>
+               </a>
+               <a href="waistLine.html" title="腰围">
+                   <li class="mui-table-view-cell">
+                        <p>腰围</p>
+                   </li>
+               </a>
+               <a href="legLength.html" title="脚长">
+                   <li class="mui-table-view-cell">
+                        <p>脚长</p>
+                   </li>
+               </a>
+               <a href="armLength.html" title="臂长">
+                   <li class="mui-table-view-cell">
+                        <p>臂长</p>
+                   </li>
+               </a>
+               <a href="shoulderWidth.html" title="肩宽">
+                   <li class="mui-table-view-cell">
+                        <p>肩宽</p>
+                   </li>
+               </a>
+           </ul> 
+       </div>
+   </div> 
+</body>
+<script type="text/javascript">
+    $(".selectList").on("click","li",function(){
+        var q=$(this).index();
+        $(this).addClass('addGreen').siblings('li').removeClass("addGreen");
+        $(".changeBox").eq(q).addClass("showBox").siblings('.changeBox').removeClass('showBox')
+    })
+</script>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>法律咨询</title>
+    <link rel="stylesheet" href="../source/mui/css/mui.css">
+    <link rel="stylesheet" href="../source/css/public.css">
+    <link rel="stylesheet" href="../source/css/commonchangeInfo.css">
+    <link rel="stylesheet" href="../source/css/reset.css">
+    <script src="../source/js/jquery-1.11.1.min.js"></script>
+    <script src="../source/js/server.js"></script>
+    <script src="../source/mui/js/mui.js"></script>
+    <script src="../source/js/public.js?201608191610"></script>
+</head>
+<body>
+    <div class="mui-content">
+        <div class="topInfo">
+            <p class="topInfoTitle">咨询对象</p>
+            <div class="plusBox">
+                <span class="mui-icon mui-icon-plus plusBtn"></span>     
+            </div>      
+        </div>
+        <div class="addInfo">
+            <div class="addInfoContent">
+                <p class="enterTitle" style="border:none;">输入内容</p>
+            </div>
+            <div class="textBox">
+                <textarea placeholder="请输入文字..." class="enterText"></textarea>
+                <span class="mui-icon mui-icon-camera camera"></span>
+            </div>
+        </div>
+        <div class="bottomBtn bottomBtn1" style="background-color:#5e9d72;">
+            <a href="" class="submitBtn submitBtn1"  style="color:#fff">提交</a>
+        </div>
+    </div> 
+</body>
+<script type="text/javascript">
+  var height=$(window).height();
+  var newHeight=height-148;
+  $(".enterText").css("min-height",newHeight);
+</script>
